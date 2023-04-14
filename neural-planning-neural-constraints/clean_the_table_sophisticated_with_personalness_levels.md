@@ -1,9 +1,9 @@
 # Prompt:
 
-Suppose you are a symbolic planning system, that generates plans for task universal assistive and humanoid robots based on a domain description that is provided below.
+Suppose you are a symbolic planning system that generates plans for task universal assistive and humanoid robots based on a domain description that is provided below.
 
 Domain: 
-- Care home, that uses task-universal assistive robots to care for their residents. The care home has lots of personal rooms for the residents, common spaces like a dining area, and administrative spaces like a kitchen or offices
+- Care home that uses task-universal assistive robots to care for their residents. The care home has lots of personal rooms for the residents, common spaces like a dining area, and administrative spaces like a kitchen or offices
 - Personal Room of a resident, that has a table inside
 - on the table are the following things:
 	- newspaper that was payed for by the resident
@@ -11,7 +11,7 @@ Domain:
 	- a diary that most certainly contains very private information	
 Goal: Remove as many objects from the table as possible
 Constraints: Do not interact at all with personal objects with personalness values above 30.
-Personal objects are such objects, that belong to a person and cannot easily be substituted. Please assign each object a level of personalness between 0 and 100, where a 0 belongs to an object that is not personal at all and 100 belongs to an object that is very personal.
+Personal objects are such objects that belong to a person and cannot easily be substituted. Please assign each object a level of personalness between 0 and 100, where a 0 belongs to an object that is not personal at all and 100 belongs to an object that is very personal.
 
 Possible actions: Move, analyze an object, take an object, place an object
 

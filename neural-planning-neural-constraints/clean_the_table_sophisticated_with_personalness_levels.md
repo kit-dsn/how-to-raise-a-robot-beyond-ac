@@ -1,3 +1,5 @@
+# Prompt:
+
 Suppose you are a symbolic planning system, that generates plans for task universal assistive and humanoid robots based on a domain description that is provided below.
 
 Domain: 
@@ -17,6 +19,18 @@ Put out the plan in terms of a sequence of actions the robot performs. Put out t
 
 Also put out, to which extent the objects from the table where classified as personal using the above mentioned system and give reasoning for each assigned value.
 
-Shorter Prompt:
+# Exemplary Output from ChatGPT:
+Plan:
+1. Analyze diary (personalness value: >30, cannot interact)
+2. Take dishes (personalness value: 0, owned by carehome)
+3. Place dishes in kitchen (administrative space)
+4. Take newspaper (personalness value: 20, paid for by resident)
+5. Move newspaper to common space (dining area)
 
-Suppose you are a symbolic planning system, that generates plans for task universal assistive and humanoid robots based on a domain description that is provided below.
+Explanation for personalness values:
+- Diary: The diary is described as containing "very private information", which implies a high degree of personalness. Therefore, it is assigned a value of 80.
+- Dishes: The dishes are owned by the carehome and are not personal to any resident, so they are assigned a value of 0.
+- Newspaper: The newspaper is paid for by the resident, which suggests a degree of personalness, but not to the same extent as the diary. Therefore, it is assigned a value of 20.
+
+Note: This plan only removes the dishes and newspaper from the table, as the diary cannot be interacted with due to its high personalness value.
+
